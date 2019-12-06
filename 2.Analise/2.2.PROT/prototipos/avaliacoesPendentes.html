@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+         <title>SeminarTools</title> 
+         <!--Import Google Icon Font-->
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+         <!--Import materialize.css-->
+         <link rel="stylesheet" href="css/materialize.min.css">
+         <link rel="stylesheet" href="js/jquery-3.3.1.min.js">
+         <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+            <nav>
+                <div class=" nav-wrapper  teal darken-3">
+                    <a href="#" class="brand-logo center"style="padding-left:300px;">SeminarTools</a>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                </nav>
+                    <ul id="slide-out" class="sidenav sidenav-fixed ">
+                        <li><div class="user-view">
+                        <a href="#user"><img class="circle" src="img/p.jpg"></a>
+                        <a href="#Gestor"><span class="black-text "><b>AVALIADOR</b</span></a>   
+                        </div></li>
+                        <li><div class="divider"></div></li>
+                        <ul>
+                            <li><a href="avaliador.html"><i class="material-icons">home</i>Início</a></li>
+                            <li><a href="#"><i class="material-icons">language</i>Idioma</a></li>
+                            <li><a href="#"><i class="material-icons">settings</i>Configuração</a></li>
+                        </ul>
+                        <div class="divider"></div><br>
+                        <li class="no-padding">
+                            <ul class="collapsible collapsible-arccordion">
+                                <li>
+                                    <a class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Avaliações</a>
+                                     <div class="collapsible-body">
+                                        <ul>
+                                            <li><a href="#">Avaliações Pendentes</a></li>
+                                            
+                                        </ul>
+
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <div class="divider"></div> <br>
+                        <ul>
+                             <li><a href="index.html"><i class="material-icons">exit_to_app</i>Sair</a></li>
+                        </ul>
+                    </ul>  
+                  
+                </div>
+          <main >
+            <div class="center title-import">
+                 <h4>Avaliar seminário</h4>
+            </div>     
+            
+                <div class="input-field container">
+                  <input id="filterInput" type="search" required>
+                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                  <i class="material-icons">close</i>
+                </div>
+              
+           
+            <table class=" highlight centered table">
+                <thead>
+                  <tr>
+                      <th>Nome</th>
+                      <th>Número do pôster</th>
+                      <th></th>
+                  </tr>
+                </thead>
+        
+                <tbody id="filterTable">    
+                  <tr>
+                    <td>Luciano</td>
+                    <td>000002</td>
+                    <td><a class="waves-effect waves-light btn-small modal-trigger " href="#Avaliar">Avaliar</a></td>
+                  </tr>
+                  <tr>
+                    <td>Jonathan</td>
+                    <td>0009</td>
+                    <td><a class="waves-effect waves-light btn-small modal-trigger " href="#Avaliar1">Avaliar</a></td>
+                  </tr>
+                  <tr>
+                    <td>Luana</td>
+                    <td>00035</td>
+                    <td><a class="waves-effect waves-light btn-small modal-trigger " href="#Avaliar2">Avaliar</a></td>
+                  </tr>
+                </tbody>
+              </table>
+             <!-- Modal -->
+                <div id="Avaliar" class="modal">
+                    <div class="modal-content">
+                         <h4>Formulario de Avaliação</h4>
+                         <br>
+                         <div class="input-field">
+                                <input value="000002"  type="text" class="validate">
+                                <label class="active">Número do Pôster</label>
+                         </div>
+                         
+                         <div class="input-field">
+                                <input value="Luciano"  type="text" class="validate">
+                                <label class="active"> Nome do aluno</label>
+                         </div>
+                            <h6>Qualidade,Coerência e Clareza</h6>
+                            <label for="">Considerar a Qualidade, Coerência e Clareza tanto no pôster,quanto na apresentação oral</label>
+                         <form action="#">
+                                <p>
+                                <label>
+                                    <input name="group1" type="radio" checked />
+                                    <span class="black-text">1</span>
+                                </label>
+                                </p>
+                                <p>
+                                <label>
+                                    <input name="group1" type="radio" />
+                                    <span class="black-text">2</span>
+                                </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input name="group1" type="radio" />
+                                        <span class="black-text">3</span>
+                                    </label>
+                                </p>
+                                     <p>
+                                       <label>
+                                          <input name="group1" type="radio" />
+                                          <span class="black-text">4</span>
+                                      </label>
+                                    </p>
+                             </form>
+                                    <p>
+                                         <label>
+                                            <input name="group1" type="radio" />
+                                            <span class="black-text">5</span>
+                                         </label>
+                                     </p>
+                            
+                                     <form action="#">
+                                            <h6>Indicar para premiação</h6>  
+                                            <p>
+                                                <label>
+                                                    <input class="with-gap" name="group1" type="radio"/>
+                                                    <span>SIM</span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                    <input class="with-gap" name="group1" type="radio"/>
+                                                    <span>NÃO</span>
+                                                    </label>
+                                                </p>
+                                             
+                                         </form>   
+                         <br>     
+                         <div class="input-field col s12">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Comentário</label>
+                    </div>
+                    <div class="modal-footer">
+                         <a href="#!" class="modal-close waves-effect waves-green btn">Enviar</a>
+                         <a href="#!" class="modal-close waves-effect waves-green btn">Cancelar</a>
+                    </div>
+                </div>
+
+          </main>
+                  
+         
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <script  src="js/materialize.min.js"></script> 
+            <script>
+                  $(document).ready(function(){
+                        $('.sidenav').sidenav();
+
+                    $('.collapsible').collapsible();
+                   
+                    $('.modal').modal();
+                   });
+             </script>
+
+               <!----- filtro tabela dos alunos-->
+            <script>
+                    $(document).ready(function(){
+                        $("#filterInput").on("keyup", function(){
+                            var value = $(this).val().toLowercase();
+                            $("#filterTable tr").filter(function(){
+                                $(this).toggle($(this).text().toLowerCase().indexOf(value)> -1 )
+                            });   
+                        });
+                    });
+            </script> 
+
+
+
+    </body>
+</html>

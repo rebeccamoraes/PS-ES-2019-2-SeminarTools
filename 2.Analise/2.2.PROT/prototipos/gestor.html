@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+         <title>SeminarTools</title> 
+         <!--Import Google Icon Font-->
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+         <!--Import materialize.css-->
+         <link rel="stylesheet" href="css/materialize.min.css">
+         <link rel="stylesheet" href="js/jquery-3.3.1.min.js">
+         <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+            <nav>
+                <div class=" nav-wrapper  teal darken-3">
+                    <a href="#" class="brand-logo center "style="padding-left:300px;">SeminarTools</a>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                </nav>
+                    <ul id="slide-out" class="sidenav sidenav-fixed ">
+                        <li><div class="user-view">
+                        <a href="#user"><img class="circle" src="img/p.jpg"></a>
+                        <a href="#Gestor"><span class="black-text gestor"><b>GESTOR</b</span></a>   
+                        </div></li>
+                        <li><div class="divider"></div></li>
+                        <ul>
+                            <li><a href="gestor.html"><i class="material-icons">home</i>Início</a></li>
+                            <li><a href="#"><i class="material-icons">language</i>Idioma</a></li>
+                            <li><a href="#"><i class="material-icons">settings</i>Configuração</a></li>
+                        </ul>
+                        <div class="divider"></div>
+                        <li class="no-padding">
+                            <ul class="collapsible collapsible-arccordion">
+                                <li>
+                                    <a class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Aluno</a>
+                                     <div class="collapsible-body">
+                                        <ul>
+                                            <li><a href="importAlunos.html">Importar Alunos</a></li>
+                                            
+                                        </ul>
+
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="no-padding">
+                                <ul class="collapsible collapsible-arccordion">
+                                    <li>
+                                        <a class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Avaliadores</a>
+                                         <div class="collapsible-body">
+                                            <ul>
+                                                <li><a href="avaliadorCadastro.html">Cadastrar</a></li>
+                                                <li><a href="#">Exibir Avaliadores</a></li>
+                                                <li><a href="#">Distribuir alunos</a></li>
+                                            </ul>
+    
+                                        </div>
+                                    </li>
+    
+                                </ul>
+                            </li>
+
+                            <li class="no-padding">
+                                    <ul class="collapsible collapsible-arccordion">
+                                        <li>
+                                            <a class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Seminário</a>
+                                             <div class="collapsible-body">
+                                                <ul>
+                                                    <li><a href="#">Criar Seminário</a></li>
+                                                    <li><a href="#">Formulários</a></li>
+                                                    
+                                                </ul>
+        
+                                            </div>
+                                        </li>
+        
+                                    </ul>
+                                </li> 
+                                <ul>
+                                    <li><a href="#"><i class="material-icons">card_giftcard</i>Indicados para premiação</a></li>
+                                </ul>
+                                
+                                <div class="divider"></div>
+                                <ul>
+                                     <li><a href="index.html"><i class="material-icons">exit_to_app</i>Sair</a></li>
+                               </ul>  
+                               
+                    </ul>  
+                  
+                </div>
+          <main class="container">
+                <section>
+                        <h4 class="center">Bem vindo ao SeminarTools</h4><br><br>
+                        <p class="center-align"> Você está logado no sistema  como Gestor.</p> 
+                        <p class="center-align">Acesse o menu para fazer a gerencia dos seminários.</p>
+                    </section>
+             
+          </main>
+                  
+            
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <script  src="js/materialize.min.js"></script> 
+            <script>
+                  $(document).ready(function(){
+                        $('.sidenav').sidenav();
+
+                    $('.collapsible').collapsible();
+                   });
+
+             </script>
+    </body>
+</html>
